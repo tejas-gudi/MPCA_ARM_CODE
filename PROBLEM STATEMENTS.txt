@@ -1,0 +1,24 @@
+*write an alp add 2 32 bit numbers loaded from memory and store it in memory
+
+*write an alp to copy n numbers from loc a to b
+
+*write an alp to find fact of a number stored in R0
+
+*write an alp 
+    based on the value of the number in R0
+    ;store 1 in R1 if R0 is ZERO
+    ;store 2 in R1 if R0 is POSITIVE
+    ;store 3 in R1 if R0 is NEGETIVE
+
+*compare the value of R0 and R1 add is R0 = R1 else substract
+
+*   if(R0 != 5){R1 = R1 + R0 - R2}
+*   if((R0 == R1) && (R2 == R3)) R4++
+
+loadmultiple/STORE-MULTIPLE <LDM/STR>{<CONDITION>}<ADDRESSING MODE>Rn{!},<registers>{^}
+    IA  INCREMRNT AFTER     0 to n-1
+    IB  INCREMRNT BEFORE    1 to n
+    DA  DECREMRNT AFTER     n-1 to 1
+    DB  DECREMRNT BEFORE    n-1 to 0
+
+*write a program using arm7tdmi isa(inst set arch) to copy a block of 512 bytes of data from loc A to loc B if the rate of data trasfer rate is 32bytes

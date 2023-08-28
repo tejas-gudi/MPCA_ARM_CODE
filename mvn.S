@@ -1,0 +1,4 @@
+MOV R0, #5
+MVNS R1, R0
+ADD R1, R1, #1
+SWI 0X011

@@ -1,0 +1,5 @@
+MOV R1, #0
+MVNS R1, R0     
+ADDS R1, R1, #2
+MOV R2, #3
+ADC R2, R1, R2

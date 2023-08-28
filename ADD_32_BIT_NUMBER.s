@@ -1,0 +1,14 @@
+.DATA   
+    NUMBER1: .WORD 0X00000004
+    NUMBER2: .WORD 0X00000008
+    SUM: .WORD 0
+
+.TEXT
+    LDR R0, = NUMBER1
+    LDR R1, = NUMBER2
+    LDR R3, = SUM
+    LDR R4, [R0]
+    LDR R5, [R1]
+    ADD R6, R4, R5
+    STR R3, [R6]
+    SWI 0X011

@@ -1,0 +1,31 @@
+.TEXT
+    MOV R0, #-5
+    CMP R0, #0
+    BEQ EQUAL
+    BLT LESS_THAN
+    B MORE_THAN
+
+EQUAL: 
+    MOV R2, #1
+    SWI 0X011
+    
+MORE_THAN:
+    MOV R2, #2
+    SWI 0X011
+
+LESS_THAN:
+    MOV R2, #3
+    SWI 0X011
+
+
+
+/*
+MOV R0, #5
+CMP R0, #0
+MOVEQ R2, #1
+SWIEQ 0X011
+MOVPL R2, #2
+SWIPL 0X011
+MOVMI R2, #3
+SWIMI 0X011
+ */
